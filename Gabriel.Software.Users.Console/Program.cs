@@ -35,15 +35,25 @@ public static class Program
 
     private static IList<User> RetrieveDataPath(string filePath)
     {
-        var userList = new List<User>();
-        using var file = new StreamReader(filePath);
-        string? line;
-        while ((line = file.ReadLine()) != null)
+        try
         {
-            userList.Add(new User(line));
+            var userList = new List<User>();
+            using var file = new StreamReader(filePath);
+            string? line;
+            while ((line = file.ReadLine()) != null)
+            {
+                userList.Add(new User(line));
+            }
+            return userList;
+
         }
-        
-        return userList;
+        catch(FileNotFoundException)
+        {
+            System.Console.WriteLine("File not found, application will shutdown");
+            throw;
+        }
+
+
     }
 
     private static void VerifyIfCanRun(DateTime lastRun)
