@@ -1,8 +1,10 @@
 # Gabriel.Software.Users
 alfasoft
 how to run the application
+## to run the application you must have the dotnet runtime installed in your computer https://dotnet.microsoft.com/en-us/download
+## dotnet sdk is required to run via CLI 
 
-# RUNNING VIA DOTNET CLI
+# RUNNING VIA DOTNET CLI (REQUIREMENTS: DOTNET RUNTIME AND DOTNET SDK)
 1. ##### using the cmd clone the project using git
 #### How to clone a project: https://docs.github.com/pt/repositories/creating-and-managing-repositories/cloning-a-repository
 2. ##### open the main folder: "Gabriel.Software.Users.Console"
@@ -17,7 +19,7 @@ how to run the application
 
 
 
-# RUNNING THE PUBLISHED VERSION - OPTION 1
+# RUNNING THE PUBLISHED VERSION - OPTION 1 (Requirements: DOTNET RUNTIME)
 1. ##### download the application https://drive.google.com/file/d/1olNusmYkMXJgVa8KqdEkvvDtb-OUa1Tx/view?usp=sharing
 2. ##### extract all the files for any folder in your computer
 3. ##### open the cmd (command prompt) and access the same folder as the .exe file 
@@ -25,7 +27,7 @@ how to run the application
 5. Example:" gabriel.software.users.console "C:\Users\GABRI\Desktop\filepath\users.txt"  "
 
 
-# RUNNING THE PUBLISHED VERSION - OPTION 2
+# RUNNING THE PUBLISHED VERSION - OPTION 2 (REQUIREMENTS: DOTNET RUNTIME AND DOTNET SDK)
 1. ##### using the cmd (command prompt) clone the project using git
 2. ##### open the root folder: ("Gabriel.Software.Users.Console")
 3. ##### in the cmd write and run this command: dotnet publish --configuration Release
