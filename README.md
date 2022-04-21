@@ -26,3 +26,10 @@ how to run the application
 
 
 # RUNNING THE PUBLISHED VERSION - OPTION 2
+1. ##### using the cmd (command prompt) clone the project using git
+2. ##### open the root folder: ("Gabriel.Software.Users.Console")
+3. ##### in the cmd write and run this command: dotnet publish --configuration Release
+4. ##### inside the root folder ("Gabriel.Software.Users.Console") you're going to find a "bin" folder, click in it
+5. ##### Open the "Release" folder
+6. ##### Open the "net6.0" folder
+7. ##### Open the publish folder via cmd (command prompt) and go to 4. step in "Running the publishd version - option 1"
