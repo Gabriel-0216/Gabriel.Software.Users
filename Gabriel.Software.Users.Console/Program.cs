@@ -14,9 +14,6 @@ public static class Program
         VerifyIfCanRun(getLastRun);
         log.SetAppPath(appPath);
 
-        //REMEMBER TO REMOVE
-        args = new[] {@"C:\Users\GABRI\Desktop\teste.txt"};
-        
         if (args.Length == 0)
         {
             System.Console.WriteLine("You should pass the file path as a parameter");

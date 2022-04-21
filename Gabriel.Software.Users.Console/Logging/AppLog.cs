@@ -36,6 +36,7 @@ public class AppLog
         }
         catch (FileNotFoundException ex)
         {
+            WriteDateLastRun(dateTime);
             return dateTime.AddSeconds(-60);
         }
 
