@@ -17,7 +17,8 @@ public static class Program
         if (args.Length == 0)
         {
             System.Console.WriteLine("You should pass the file path as a parameter");
-            System.Console.WriteLine("Example: dotnet run \"teste\" ");
+            System.Console.WriteLine("On the terminal open the path where the application is installed and run the command");
+            System.Console.WriteLine("Gabriel.Software.Users.Console.exe \"COMPLETE FILE PATH\" ");
             System.Console.WriteLine("Click enter to close the application");
             System.Console.ReadKey();
 
