@@ -9,7 +9,7 @@ how to run the application
 3. ##### run the application with the dotnet cli: "dotnet run".
 4. ##### in order to run this application you must pass a path from a text file from your PC.
 5. ##### the command should looks like this: dotnet run "C:/User/file.txt" 
-6. #### The application will run return the data
+6. ##### The application will run and return the data
 
 
 
