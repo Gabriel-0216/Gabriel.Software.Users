@@ -18,6 +18,9 @@ public static class Program
         {
             System.Console.WriteLine("You should pass the file path as a parameter");
             System.Console.WriteLine("Example: dotnet run \"teste\" ");
+            System.Console.WriteLine("Click enter to close the application");
+            System.Console.ReadKey();
+
             return;
         }
         log.Write($"File {args[0]}");
