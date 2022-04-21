@@ -25,6 +25,7 @@ public class Service : IService
         {
             Response = resultContent,
             Endpoint = url.ToString(),
+            UserName = user.UserName
         };
     }
 }

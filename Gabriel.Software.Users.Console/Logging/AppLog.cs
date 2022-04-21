@@ -24,12 +24,19 @@ public class AppLog
 
     public DateTime GetLastRun()
     {
-        DateTime dateTime = DateTime.UtcNow;
-        using var file = new StreamReader(LogRuns);
-        string? line;
-        while ((line = file.ReadLine()) != null)
+        var dateTime = DateTime.UtcNow;
+        try
         {
-            var dateTimeTryParse = DateTime.TryParse(line, out dateTime);
+            using var file = new StreamReader(LogRuns);
+            string? line;
+            while ((line = file.ReadLine()) != null)
+            {
+                var dateTimeTryParse = DateTime.TryParse(line, out dateTime);
+            }
+        }
+        catch (FileNotFoundException ex)
+        {
+            return dateTime.AddSeconds(-60);
         }
 
         return dateTime;
