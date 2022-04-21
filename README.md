@@ -7,8 +7,8 @@ how to run the application
 #### How to clone a project: https://docs.github.com/pt/repositories/creating-and-managing-repositories/cloning-a-repository
 2. ##### open the main folder: "Gabriel.Software.Users.Console"
 3. ##### run the application with the dotnet cli: "dotnet run".
-4. ##### in order to run this application you must pass a text file from your PC.
-5. ##### the command should looks like this: dotnet run "C:/User/file.txt"
+4. ##### in order to run this application you must pass a path from a text file from your PC.
+5. ##### the command should looks like this: dotnet run "C:/User/file.txt" 
 6. #### The application will run return the data
 
 
@@ -17,5 +17,12 @@ how to run the application
 
 
 
-# RUNNING THE PUBLISHED VERSION
+# RUNNING THE PUBLISHED VERSION - OPTION 1
+1. ##### download the application https://drive.google.com/file/d/1olNusmYkMXJgVa8KqdEkvvDtb-OUa1Tx/view?usp=sharing
+2. ##### extract all the files for any folder in your computer
+3. ##### open the cmd (command prompt) and access the same folder as the .exe file 
+4. ##### run the exe via cmd passing the path of the text file.
+5. Example:" gabriel.software.users.console "C:\Users\GABRI\Desktop\filepath\users.txt"  "
 
+
+# RUNNING THE PUBLISHED VERSION - OPTION 2
